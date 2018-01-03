@@ -1,0 +1,19 @@
+0.41 zaczynam historie wersji
+0.42 - zwiekszono payload z 4 do 5 bajtow skad,dokad,bajt danych 1, bajt danych2, sterowanie
+0.43 - rozroznienie na odbiornik i nadajnik eeprom(3)
+0.44 - przekazuje znak minus radiowo
+0.45 - obsluga czujnika dht11 i dth22
+0.46 - liczy punkt rosy nawet dla ujemnych. kod troche duzy da sie pare rzczy zmienic.
+0.47 - zrobione retransmisje domyslnie do 3
+0.48 - poprawione bledy retransmisji
+0.49 - dzialaja rozkazy wlaczy(7) i wylacz(8)
+0.50 - moduly po restarcie odswiezaja stan przekaznika - wprowadzono rozkazy 2 bajtowe
+0.51 - nowe guziki, nowe ledy 
+	   oddany prototyp nadajnika z termometrem
+0.52 - praca nad rozkazem wyslij temperature nadajnika
+
+*****************************************************************************************************************
+0.01B - start nowego projektu. nowa warstwa sieci
+
+		
+		

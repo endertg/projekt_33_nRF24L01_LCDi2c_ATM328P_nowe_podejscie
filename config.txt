@@ -1,0 +1,79 @@
+//pliki konfiguracyjne
+
+//********************************************
+//atmega328 arduino nano usb - amega328P
+//LCD - na magistrali I2C
+//1-GND
+//2-VCC
+//3-SDA-A4
+//4-SCL-A5
+
+//********************************************
+//NFR24L01 - na magistrali SPI
+//1-GND
+//2-VCC
+//3-CE-PB0 (Pin14 atmega328p)(D8 arduino nano)
+//4-CSN(SS)-PB2 (Pin16 atmega328p)(D10 arduino nano)
+//5-SCK-PB5 (Pin19 atmega328p)(D13 arduino nano)
+//6-MOSI-PB3 (Pin17 atmega328p)(D11 arduino nano)
+//7-MISO-PB4 (Pin18 atmega328p)(D12 arduino nano)
+//8-IRQ-N/A
+//********************************************
+//DS18b20  - na magistrali 1 Wire
+//PD5-D5 (PIN11 atmega328p)(D5 arduino nano)
+//********************************************
+//keyboard
+//button1(day)-PD2-D2 (PIN4 atmega328p)(D2 arduino nano)
+//button2(night)-PD3-D3 (PIN5 atmega328p)(D3 arduino nano)
+//button3(off)-PC3 (A3 26 arduino nano)
+//********************************************
+//diody
+//LED1-PD4-D4 (PIN6 atmega328p)(D4 arduino nano) gerzanie
+//LED2-PD6-D6 (PIN12 atmega328p)(D6 arduino nano) dzieñ
+//LED3-PD7-D7 (PIN13 atmega328p)(D7 arduino nano) noc
+//*********************************************
+//wyjscie na przekaznik
+//output1 - PD1 (PIN3 atmega328p)(TX1 arduino nano)
+//*********************************************
+//wyjscie na buzzer
+//output2 - PB1 (PIN15 atmega328p)(D9 arduino nano)
+//*********************************************
+//czujnik DH11
+//INPUTPIN - PD0 (PIN2 atmega328p)(RX0 arduino nano)
+//**********************************************************************
+// TABELA ROZKAZÓW
+//**********************************************************************
+00 - EMPTY powrot
+01 - wysy³a TEMP_C
+02 - wysy³a TEMP_D
+03 - wysy³a TEMPW_C_D
+04 - wysy³a TEMPW_D_D
+05 - wysy³a TEMPW C_N
+06 - wysy³a TEMPW_D_N
+07 - rozkaz W£1_ON
+08 - rozkaz W£1_OFF
+09 - w³¹cz tryb Off
+10 - w³¹cz tryb Dzienny
+11 - w³¹cz tryb Nocny
+12 - pytanie o stan W£1
+13 - pytanie o stan TEMPW nastawy
+14 - pytanie o TEMP
+15 - zapytanie o tryb D/N
+16 - reset odbiornika - nadajnik podaj wszystkie nastawy
+
+//**********************************************************************
+// TABELA komend AT
+//**********************************************************************
+AT - odpowiedz OK
+ATRYB=X - wlacz tryb pracy X
+ATTRYB? - podaj tryb pracy
+ATTEMP1=X - ustaw temperature 1 na x
+ATTEMP1? - podaj temp1
+ATTEMP2=X - ustaw temperature 2 na x
+ATTEMP2? - podaj temp2
+ATHIS=X - ustaw histeree na X
+ATHIS? - podaj histereze
+ATV - podaj cala konfiguracje
+ATEEW - zapisz aktualna konfiguracje do EEPROM
+ATEER - odczytaj EEPROM
+
