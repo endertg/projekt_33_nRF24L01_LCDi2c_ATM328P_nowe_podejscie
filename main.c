@@ -132,7 +132,7 @@ if (odb==2)//off
     {
 		odczyt_temp();
 		wyswietl_LCD();
-		//klawiatura();
+		klawiatura();
 		//esp8266_ini();
 		czy_wlaczyc();
 
